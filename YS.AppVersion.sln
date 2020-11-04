@@ -7,17 +7,17 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{6C7E5914-CD6
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "test", "test", "{9D50B35B-1EAA-4620-B0A6-245456051247}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "YS.Hello.UnitTest", "test\YS.Hello.UnitTest\YS.Hello.UnitTest.csproj", "{2327D54C-ABA8-4CC3-8FEA-ACF52F0B7A11}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "YS.AppVersion.Core", "src\YS.AppVersion.Core\YS.AppVersion.Core.csproj", "{E365BE25-358B-416C-B5A0-B6FBBDDF1ED8}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "YS.AppVersion.Core", "src\YS.AppVersion.Core\YS.AppVersion.Core.csproj", "{E365BE25-358B-416C-B5A0-B6FBBDDF1ED8}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "YS.AppVersion.Impl.Assembly", "src\YS.AppVersion.Impl.Assembly\YS.AppVersion.Impl.Assembly.csproj", "{D51CAA27-81A5-40CC-AD13-C65A4D235BC8}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "YS.AppVersion.Impl.Assembly", "src\YS.AppVersion.Impl.Assembly\YS.AppVersion.Impl.Assembly.csproj", "{D51CAA27-81A5-40CC-AD13-C65A4D235BC8}"
-EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "YS.AppVersion.Rest.Api", "src\YS.AppVersion.Rest.Api\YS.AppVersion.Rest.Api.csproj", "{A95B62B4-5C90-4F48-92AF-D78898A20A33}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "YS.AppVersion.Rest.Api", "src\YS.AppVersion.Rest.Api\YS.AppVersion.Rest.Api.csproj", "{A95B62B4-5C90-4F48-92AF-D78898A20A33}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "example", "example", "{8EEC2915-456C-47C1-B67E-91C549816B55}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DemoWebApp", "example\DemoWebApp\DemoWebApp.csproj", "{3CA30870-33EC-4EFE-A72A-A45DB5ACE633}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DemoWebApp", "example\DemoWebApp\DemoWebApp.csproj", "{3CA30870-33EC-4EFE-A72A-A45DB5ACE633}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "YS.AppVersion.Impl.Assembly.UnitTest", "test\YS.AppVersion.Impl.Assembly.UnitTest\YS.AppVersion.Impl.Assembly.UnitTest.csproj", "{4463F3C8-AA80-4042-815F-33B99C9B49BC}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -25,10 +25,6 @@ Global
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{2327D54C-ABA8-4CC3-8FEA-ACF52F0B7A11}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{2327D54C-ABA8-4CC3-8FEA-ACF52F0B7A11}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{2327D54C-ABA8-4CC3-8FEA-ACF52F0B7A11}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{2327D54C-ABA8-4CC3-8FEA-ACF52F0B7A11}.Release|Any CPU.Build.0 = Release|Any CPU
 		{E365BE25-358B-416C-B5A0-B6FBBDDF1ED8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{E365BE25-358B-416C-B5A0-B6FBBDDF1ED8}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{E365BE25-358B-416C-B5A0-B6FBBDDF1ED8}.Release|Any CPU.ActiveCfg = Release|Any CPU
@@ -45,16 +41,20 @@ Global
 		{3CA30870-33EC-4EFE-A72A-A45DB5ACE633}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{3CA30870-33EC-4EFE-A72A-A45DB5ACE633}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{3CA30870-33EC-4EFE-A72A-A45DB5ACE633}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4463F3C8-AA80-4042-815F-33B99C9B49BC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4463F3C8-AA80-4042-815F-33B99C9B49BC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4463F3C8-AA80-4042-815F-33B99C9B49BC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4463F3C8-AA80-4042-815F-33B99C9B49BC}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
 	EndGlobalSection
 	GlobalSection(NestedProjects) = preSolution
-		{2327D54C-ABA8-4CC3-8FEA-ACF52F0B7A11} = {9D50B35B-1EAA-4620-B0A6-245456051247}
 		{E365BE25-358B-416C-B5A0-B6FBBDDF1ED8} = {6C7E5914-CD6B-40F1-BFD7-8FB17E3EAE11}
 		{D51CAA27-81A5-40CC-AD13-C65A4D235BC8} = {6C7E5914-CD6B-40F1-BFD7-8FB17E3EAE11}
 		{A95B62B4-5C90-4F48-92AF-D78898A20A33} = {6C7E5914-CD6B-40F1-BFD7-8FB17E3EAE11}
 		{3CA30870-33EC-4EFE-A72A-A45DB5ACE633} = {8EEC2915-456C-47C1-B67E-91C549816B55}
+		{4463F3C8-AA80-4042-815F-33B99C9B49BC} = {9D50B35B-1EAA-4620-B0A6-245456051247}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {DB11BB21-3F5D-42D6-8737-F19C0666F1F8}

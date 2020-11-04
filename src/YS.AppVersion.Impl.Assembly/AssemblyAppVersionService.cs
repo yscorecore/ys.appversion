@@ -13,7 +13,7 @@ namespace YS.AppVersion.Impl.Assembly
             var entryAssembly = System.Reflection.Assembly.GetEntryAssembly();
             var version = new AppVersion
             {
-                AssemblyVersion = entryAssembly.GetCustomAttribute<AssemblyVersionAttribute>()?.Version,
+                AssemblyVersion = entryAssembly.GetName().Version.ToString(3),
                 AssemblyFileVersion = entryAssembly.GetCustomAttribute<AssemblyFileVersionAttribute>()?.Version,
                 AssemblyInformationalVersion = entryAssembly.GetCustomAttribute<AssemblyInformationalVersionAttribute>()?.InformationalVersion
 
